@@ -1,5 +1,5 @@
 ## Example Description
-This example demonstrates how to initialize and pull measurement values from the TSP01 Rev B. The code will also check for available external probes and take temperature measurements for these if available. 
+This example demonstrates how to initialize and set the voltage output of the KLC101 in C#. This uses the Dllimport methods to wrap the function available in the C++ SDK. Please be aware that not all functions are wrapped in this example. Other functions can be imported by following the definitions in the API which is found in the software install location: C:\Program Files (x86)\Thorlabs\KLC\Sample\
 
 ## Instructions for Use
 
