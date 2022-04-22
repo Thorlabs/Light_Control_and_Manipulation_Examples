@@ -11,7 +11,7 @@ namespace KLC101_Examples
     {
         //Imports for method in C++ based dll
         [DllImport("KLCCommandLib_x64.dll", EntryPoint = "List")]
-        public static extern int List(out char[] list, int listSize);
+        public static extern int List(ref char[] list, int listSize);
 
         [DllImport("KLCCommandLib_x64.dll", EntryPoint = "Open")]
         public static extern int Open(char[] deviceString, int baudRate, int timeout);
@@ -28,8 +28,8 @@ namespace KLC101_Examples
         static void Main(string[] args)
         {
             //Check for connected devices. If none are found, close
-            char[] list;
-            int numDevices = List(out list, 2048);
+            char[] list = new char[2048];
+            int numDevices = List(ref list, 2048);
             Console.WriteLine(numDevices);
 
             if (numDevices == 0)
@@ -43,13 +43,13 @@ namespace KLC101_Examples
 
 
             //Enable the device
-            SetEnable(deviceHandle, '1') ;
+            //SetEnable(deviceHandle, '1') ;
 
             //Set Voltage
-            SetVoltage1(deviceHandle, 5.5f);
+            //SetVoltage1(deviceHandle, 5.5f);
 
             //Close the device
-            Close(deviceHandle);
+            //Close(deviceHandle);
 
         }
     }
