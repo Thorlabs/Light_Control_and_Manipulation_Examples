@@ -41,7 +41,7 @@ namespace LCC25_Serial_Commands
             //Read the ID of the port
             lcc.Write("*idn?\r");
             echo = lcc.ReadLine();
-            Console.WriteLine("Device is a: \n" + lcc.ReadLine());
+            Console.WriteLine("Device is a: " + lcc.ReadLine());
 
             //Set the voltage
             lcc.Write("volt1=15\r");
