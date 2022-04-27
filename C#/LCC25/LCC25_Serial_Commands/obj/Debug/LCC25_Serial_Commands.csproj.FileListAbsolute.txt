@@ -1,0 +1,8 @@
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\LCC25\LCC25_Serial_Commands\bin\Debug\LCC25_Serial_Commands.exe.config
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\LCC25\LCC25_Serial_Commands\bin\Debug\LCC25_Serial_Commands.exe
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\LCC25\LCC25_Serial_Commands\bin\Debug\LCC25_Serial_Commands.pdb
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\LCC25\LCC25_Serial_Commands\obj\Debug\LCC25_Serial_Commands.csproj.AssemblyReference.cache
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\LCC25\LCC25_Serial_Commands\obj\Debug\LCC25_Serial_Commands.csproj.SuggestedBindingRedirects.cache
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\LCC25\LCC25_Serial_Commands\obj\Debug\LCC25_Serial_Commands.csproj.CoreCompileInputs.cache
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\LCC25\LCC25_Serial_Commands\obj\Debug\LCC25_Serial_Commands.exe
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\LCC25\LCC25_Serial_Commands\obj\Debug\LCC25_Serial_Commands.pdb

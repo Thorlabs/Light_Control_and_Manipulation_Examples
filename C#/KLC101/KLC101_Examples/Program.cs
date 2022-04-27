@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Security;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace KLC101_Examples
     class Program
     {
         //Imports for method in C++ based dll
-        [DllImport("KLCCommandLib_x64.dll", EntryPoint = "List")]
+        [DllImport("KLCCommandLib_x64.dll", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl, EntryPoint = "List")]
         public static extern int List(ref char[] list, int listSize);
 
         [DllImport("KLCCommandLib_x64.dll", EntryPoint = "Open")]
@@ -30,7 +31,8 @@ namespace KLC101_Examples
             //Check for connected devices. If none are found, close
             char[] list = new char[2048];
             int numDevices = List(ref list, 2048);
-            Console.WriteLine(numDevices);
+            Console.WriteLine("Number of connected devices: {0}", numDevices);
+            Console.WriteLine(list);
 
             if (numDevices == 0)
             {
@@ -39,7 +41,7 @@ namespace KLC101_Examples
             }
 
             //Get a handle to the device
-            int deviceHandle = Open("COM5".ToCharArray(), 9600, 3000);
+            //int deviceHandle = Open("COM5".ToCharArray(), 9600, 3000);
 
 
             //Enable the device
