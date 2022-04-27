@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KLC101_Examples")]
+[assembly: AssemblyTitle("Initialize_and_Open")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("KLC101_Examples")]
+[assembly: AssemblyProduct("Initialize_and_Open")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("38930324-223e-481d-a842-7e21e960117e")]
+[assembly: Guid("b11d1083-b84f-4cd0-b85c-3b30849ff853")]
 
 // Version information for an assembly consists of the following four values:
 //

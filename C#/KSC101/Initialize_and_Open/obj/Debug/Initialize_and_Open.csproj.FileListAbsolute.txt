@@ -1,0 +1,15 @@
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\bin\Debug\Initialize_and_Open.exe.config
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\bin\Debug\Initialize_and_Open.exe
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\bin\Debug\Initialize_and_Open.pdb
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\bin\Debug\Thorlabs.MotionControl.DeviceManagerCLI.dll
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\bin\Debug\Thorlabs.MotionControl.KCube.SolenoidCLI.dll
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\bin\Debug\Thorlabs.MotionControl.PrivateInternal.dll
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\bin\Debug\Thorlabs.MotionControl.Tools.Common.dll
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\bin\Debug\Thorlabs.MotionControl.Tools.Logging.dll
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\bin\Debug\Thorlabs.MotionControl.Tools.WPF.dll
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\obj\Debug\Initialize_and_Open.csproj.AssemblyReference.cache
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\obj\Debug\Initialize_and_Open.csproj.SuggestedBindingRedirects.cache
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\obj\Debug\Initialize_and_Open.csproj.CoreCompileInputs.cache
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\obj\Debug\Initialize_and_Open.csproj.CopyComplete
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\obj\Debug\Initialize_and_Open.exe
+C:\Users\manzelmi\Documents\Tech_Github\Light_Control_and_Manipulation_Examples\C#\KSC101\Initialize_and_Open\obj\Debug\Initialize_and_Open.pdb

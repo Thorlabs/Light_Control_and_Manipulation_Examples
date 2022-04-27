@@ -27,52 +27,61 @@ namespace LCC25_Serial_Commands
             lcc.ReadTimeout = 1000;
             lcc.WriteTimeout = 500;
             lcc.RtsEnable = true;
+            lcc.NewLine = "\r"; //Returns from the LCC are ended with a carriage return character
             lcc.Open();
 
-            //Read the ID of the port
-            lcc.Write("\r\n");
-            Thread.Sleep(1000);
-            string output = lcc.ReadLine();
-            Console.WriteLine(output);
-            Thread.Sleep(1000);
-            try
-            {
-                output = lcc.ReadLine();
-                Console.WriteLine(output);
-            }
-            catch (Exception)
-            { Console.WriteLine("Timeout"); }
+            //The "Enter" key needs to be sent to enable communication with the device. This is represented by a single carriage return
+            lcc.Write("\r");
+            //The return from this character is ended differently than the others so a different method is used to read it out. This always prints "Command error CMD_NOT_DEFINED"
+            WriteOutCharacters();
 
+            //All commands will return an echo of the sent string before returning any other data. This is used to store that if needed
+            string echo = "";
 
             //Read the ID of the port
             lcc.Write("*idn?\r");
-            Thread.Sleep(2000);
-            try
-            {
-                output = lcc.ReadLine();
-                Console.WriteLine(output);
-            }
-            catch (Exception)
-            { Console.WriteLine("Timeout"); }
-            try
-            {
-                output = lcc.ReadLine();
-                Console.WriteLine(output);
-            }
-            catch (Exception)
-            { Console.WriteLine("Timeout"); }
+            echo = lcc.ReadLine();
+            Console.WriteLine("Device is a: \n" + lcc.ReadLine());
 
-            /*
-                        //Sets voltage 1 and then gets it
-                        lcc.Write("volt1=10\r\n");
-                        Thread.Sleep(1000);
-                        lcc.Write("volt1?\r\n");
-                        Thread.Sleep(1000);
-                        output = lcc.ReadLine();
-                        Console.WriteLine(output);*/
+            //Set the voltage
+            lcc.Write("volt1=15\r");
+            echo = lcc.ReadLine();
 
+            //Get the voltage and print the return
+            lcc.Write("volt1?\r");
+            echo = lcc.ReadLine();
+            Console.WriteLine("Returned Voltage is: " + lcc.ReadLine());
+
+            //Close the port
             lcc.Close();
+            Console.WriteLine("Press Any Key to Exit");
             Console.ReadKey();
+        }
+
+        private static void WriteOutCharacters()
+        {
+            //Writes out all available characters until the buffer is empty. Characters are stored in a string to be read out at the end. 
+            string output = "";
+            bool bytesAvailable = true;
+            while (bytesAvailable)
+            {
+                try
+                {
+                    char curChar = (char)lcc.ReadChar();
+                    //Ignore characters that would start or end the line 
+                    if (curChar == '>' || curChar == '\n' || curChar == '\r')
+                    { }
+                    else
+                    {
+                        output += curChar;
+                    }
+                }
+                catch(Exception) 
+                {
+                    bytesAvailable = false;
+                }
+            }
+            Console.WriteLine(output);
         }
     }
 }
