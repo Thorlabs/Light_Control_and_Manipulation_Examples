@@ -2,6 +2,7 @@
 
 ### Initialize and Enable: 
 This example shows the basic initialization and use of the KSC101 Shutter Controller. This includes opening the device, initializing the settings, enabling the device, and looping to open/close the shutter 10 times. 
+This example uses libraries found in the Kinesis software install found here: https://www.thorlabs.com/software_pages/ViewSoftwarePage.cfm?Code=Motion_Control
 
 ## Build Instructions
 1. Set the desired startup file. 
