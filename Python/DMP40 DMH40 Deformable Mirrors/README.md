@@ -6,5 +6,6 @@ It uses the ctypes library to load the DLL file for these mirrors. This library 
 
 Please note that the code connects to the first available DMP40 / DMH40 device. If you have more than one of these connected, you need to change the index number in this line:
 
-lib.TLDFM_getRsrcName(instrumentHandle, 0, resource)
+lib.TLDFM_get_device_information(instrumentHandle, 0, ...)
+
 
