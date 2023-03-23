@@ -338,7 +338,7 @@ namespace KURIOS
                     }
 
                     //verify if the time interval is in the range
-                    if (Convert.ToDouble(a[1]) < 1 || Convert.ToDouble(a[1]) > 60000)
+                    if (Convert.ToDouble(InputValue[1]) < 1 || Convert.ToDouble(InputValue[1]) > 60000)
                     {
                         Console.Write("Invalid interval. ");
                         IntervalValid = false;
@@ -354,7 +354,7 @@ namespace KURIOS
                     {
                         //in this case, BLACK mode and WIDE mode are available
                         //the decimal number of 0001 is 1; the decimal number of 0010 is 2
-                        if (a[2] != "1" && a[2] != "2")
+                        if (InputValue[2] != "1" && InputValue[2] != "2")
                         {
                             Console.Write("Invalid bandwidth. ");
                             BandwidthValid = false;
