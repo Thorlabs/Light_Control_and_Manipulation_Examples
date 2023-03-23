@@ -323,7 +323,7 @@ namespace KURIOS
                 try
                 {
                     string cache = Console.ReadLine();
-                    string[] a = cache.Split(';');
+                    string[] InputValue = cache.Split(';');
 
                     //prompt if all entered values are available 
                     bool WavelengthValid = true;
@@ -331,7 +331,7 @@ namespace KURIOS
                     bool BandwidthValid = true;
 
                     //verify if the wavelength is in the range
-                    if (Convert.ToDouble(a[0]) < wavelengthMin || Convert.ToDouble(a[0]) > wavelengthMax)
+                    if (Convert.ToDouble(InputValue[0]) < wavelengthMin || Convert.ToDouble(InputValue[0]) > wavelengthMax)
                     {
                         Console.Write("Invalid wavelength. ");
                         WavelengthValid = false;
@@ -364,7 +364,7 @@ namespace KURIOS
                     {
                         //in this case, BLACK mode and NARROW mode are available
                         //the decimal number of 0001 is 1; the decimal number of 1000 is 8
-                        if (a[2] != "1" && a[2] != "8")
+                        if (InputValue[2] != "1" && InputValue[2] != "8")
                         {
                             Console.Write("Invalid bandwidth. ");
                             BandwidthValid = false;
@@ -374,7 +374,7 @@ namespace KURIOS
                     {
                         //in this case, all four modes are available
                         //the decimal number of 0001 is 1; the decimal number of 0010 is 2; the decimal number of 0100 is 4;the decimal number of 1000 is 8
-                        if (a[2] != "1" && a[2] != "2" && a[2] != "4" && a[2] != "8")
+                        if (InputValue[2] != "1" && InputValue[2] != "2" && InputValue[2] != "4" && InputValue[2] != "8")
                         {
                             Console.Write("Invalid bandwidth. ");
                             BandwidthValid = false;
@@ -385,7 +385,7 @@ namespace KURIOS
                     {
                         //write the data of sequence<index> to the device
                         //The Command is "SS = index wavelength interval bandwidth"
-                        KURIOS.WriteLine("SS="+ Convert.ToString(i)+ " " + a[0] + " " + a[1] + " " + a[2] + "*");
+                        KURIOS.WriteLine("SS="+ Convert.ToString(i)+ " " + InputValue[0] + " " + InputValue[1] + " " + InputValue[2] + "*");
                         //After a command is accepted by the controller, a prompt symbol (>) appears, indicating it is ready to receive the next command.
                         string echo = KURIOS.ReadLine();
                         Thread.Sleep(500);
@@ -462,14 +462,14 @@ namespace KURIOS
                 try
                 {
                     string cache = Console.ReadLine();
-                    string[] a = cache.Split(';');
+                    string[] InputValue = cache.Split(';');
 
                     //prompt if all entered values are available 
                     bool WavelengthValid = true;
                     bool BandwidthValid = true;
 
                     //verify if the wavelength is in the range
-                    if (Convert.ToDouble(a[0]) < wavelengthMin || Convert.ToDouble(a[0]) > wavelengthMax)
+                    if (Convert.ToDouble(InputValue[0]) < wavelengthMin || Convert.ToDouble(InputValue[0]) > wavelengthMax)
                     {
                         Console.Write("Invalid wavelength. ");
                         WavelengthValid = false;
@@ -485,7 +485,7 @@ namespace KURIOS
                     {
                         //in this case, BLACK mode and WIDE mode are available
                         //the decimal number of 0001 is 1; the decimal number of 0010 is 2
-                        if (a[1] != "1" && a[1] != "2")
+                        if (InputValue[1] != "1" && InputValue[1] != "2")
                         {
                             Console.Write("Invalid bandwidth. ");
                             BandwidthValid = false;
@@ -495,7 +495,7 @@ namespace KURIOS
                     {
                         //in this case, BLACK mode and NARROW mode are available
                         //the decimal number of 0001 is 1; the decimal number of 1000 is 8
-                        if (a[1] != "1" && a[1] != "8")
+                        if (InputValue[1] != "1" && InputValue[1] != "8")
                         {
                             Console.Write("Invalid bandwidth. ");
                             BandwidthValid = false;
@@ -505,7 +505,7 @@ namespace KURIOS
                     {
                         //in this case, all four modes are available
                         //the decimal number of 0001 is 1; the decimal number of 0010 is 2; the decimal number of 0100 is 4;the decimal number of 1000 is 8
-                        if (a[1] != "1" && a[1] != "2" && a[1] != "4" && a[1] != "8")
+                        if (InputValue[1] != "1" && InputValue[1] != "2" && InputValue[1] != "4" && InputValue[1] != "8")
                         {
                             Console.Write("Invalid bandwidth. ");
                             BandwidthValid = false;
@@ -517,7 +517,7 @@ namespace KURIOS
                         //write the data of sequence<index> to the device
                         //The Command is "SS = index wavelength interval bandwidth"
                         //set the interval to default value 50 ms. This isn't the real interval. The real interval is controlled by the trigger
-                        KURIOS.WriteLine("SS=" + Convert.ToString(i) + " " + a[0] + " 50 " + a[1] + "*");
+                        KURIOS.WriteLine("SS=" + Convert.ToString(i) + " " + InputValue[0] + " 50 " + InputValue[1] + "*");
                         //After a command is accepted by the controller, a prompt symbol (>) appears, indicating it is ready to receive the next command.
                         string echo = KURIOS.ReadLine();
                         Thread.Sleep(500);
