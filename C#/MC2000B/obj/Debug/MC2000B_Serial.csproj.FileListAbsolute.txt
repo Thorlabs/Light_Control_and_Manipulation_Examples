@@ -1,8 +1,0 @@
-C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\MC2000B Csharp\MC2000B_Serial\bin\Debug\MC2000B_Serial.exe.config
-C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\MC2000B Csharp\MC2000B_Serial\bin\Debug\MC2000B_Serial.exe
-C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\MC2000B Csharp\MC2000B_Serial\bin\Debug\MC2000B_Serial.pdb
-C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\MC2000B Csharp\MC2000B_Serial\obj\Debug\MC2000B_Serial.csproj.AssemblyReference.cache
-C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\MC2000B Csharp\MC2000B_Serial\obj\Debug\MC2000B_Serial.csproj.SuggestedBindingRedirects.cache
-C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\MC2000B Csharp\MC2000B_Serial\obj\Debug\MC2000B_Serial.csproj.CoreCompileInputs.cache
-C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\MC2000B Csharp\MC2000B_Serial\obj\Debug\MC2000B_Serial.exe
-C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\MC2000B Csharp\MC2000B_Serial\obj\Debug\MC2000B_Serial.pdb
