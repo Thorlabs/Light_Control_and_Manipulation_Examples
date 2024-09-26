@@ -1,0 +1,8 @@
+C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\FW102C FW212C Csharp\FWxC\bin\Debug\FWxC.exe.config
+C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\FW102C FW212C Csharp\FWxC\bin\Debug\FWxC.exe
+C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\FW102C FW212C Csharp\FWxC\bin\Debug\FWxC.pdb
+C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\FW102C FW212C Csharp\FWxC\obj\Debug\FWxC.csproj.AssemblyReference.cache
+C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\FW102C FW212C Csharp\FWxC\obj\Debug\FWxC.csproj.SuggestedBindingRedirects.cache
+C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\FW102C FW212C Csharp\FWxC\obj\Debug\FWxC.csproj.CoreCompileInputs.cache
+C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\FW102C FW212C Csharp\FWxC\obj\Debug\FWxC.exe
+C:\Users\zizhang\OneDrive - THORLABS Inc\Documents\4. SW Project\FW102C FW212C Csharp\FWxC\obj\Debug\FWxC.pdb
