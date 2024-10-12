@@ -1,9 +1,9 @@
 //Example Date of Creation(YYYY - MM - DD) 2024 - 09 - 06
-//Example Date of Last Modification on Github 2024 - 09 - 06
+//Example Date of Last Modification on Github 2024 - 10 - 12
 //Version of C++ used for Testing and IDE: C++ 14, Visual Studio 2022
 //Version of the Thorlabs SDK used : Thorlabs MC2000B Software Version 2.1.0
 //Example Description: This example shows how to connect a MC2000B chopper controller, 
-//it also contains setting the necessary parameters and enabling the chopper.
+//it also shows setting the necessary parameters and enabling the chopper.
 // 
 //If Visual Studio is used, and an error "cannot open source files stdafx.h" pops up while compiling
 //please delete "#include "stdafx.h"" in the MC2000CommandLib.h, and make sure stdafx.h has been added in 
@@ -24,13 +24,13 @@ int bladeType = 6; //MC1F10HP (The default blade)
 //For MC1F10HP: 0 = INT-OUTER, 1 = INT-INNER, 2 = EXT-OUTER, 3 = EXT-INNER
 //Please find the available reference-in signal for other blades from Chapter 8.3. of the manual
 //The manual can be found here: https://www.thorlabs.com/thorproduct.cfm?partnumber=MC2000B
-int refIn = 1;
+int refIn = 0;
 
 //Set the Reference-Out Signal to Outer
 //For MC1F10HP: 0 = Target, 1 = Outer, 2 = Inner
 //Please find the available reference-in signal for other blades from Chapter 8.4. of the manual
 //The manual can be found here: https://www.thorlabs.com/thorproduct.cfm?partnumber=MC2000B
-int refOut = 2;
+int refOut = 1;
 
 int main()
 {	
@@ -58,7 +58,7 @@ int main()
 
 	//Set the internal reference frequency
 	int frequency;
-	std::cout << "Set the frequency: ";
+	std::cout << "Set the frequency (Hz): ";
 	std::cin >> frequency;
 	while (std::cin.fail())
 	{
@@ -115,7 +115,7 @@ int main()
 		}
 
 		//Stop the chopper
-		std::cout << "Enable \"N\" to stop the chopper." << std::endl;
+		std::cout << "Enter \"N\" to stop the Chopper." << std::endl;
 		while (true)
 		{
 			std::cin >> character;

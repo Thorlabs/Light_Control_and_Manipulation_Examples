@@ -1,6 +1,6 @@
 ﻿// Title: FW102C/FW212C Csharp serial command example. 
 // Created Date: 2024 - 09 - 20
-// Last modified date: 2024 - 09 - 20
+// Last modified date: 2024 - 10 - 12
 // .NET version: 4.7.2
 // Tested with FW102C
 // Notes:The example connects to a Thorlabs FW102C or FW212C Motorized Filter Wheel,
@@ -148,10 +148,10 @@ namespace FWxC
             device.DiscardInBuffer();
             device.DiscardOutBuffer();
 
-            //Close the deivce
+            //Close the port
             Thread.Sleep(300);
             device.Close();
-            Console.WriteLine("\nProgram finishes.");
+            Console.WriteLine("\nProgram finished.");
             Console.ReadLine();
             return 1;
 

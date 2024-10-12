@@ -1,6 +1,6 @@
 ﻿// Title: MC2000B Csharp serial command example. 
 // Created Date: 2024 - 08 - 28
-// Last modified date: 2024 - 08 - 28
+// Last modified date: 2024 - 10 - 12
 // .NET version: 4.7.2
 // Tested with MC1F10HP blade
 // Notes:The example connects to a Thorlabs MC2000B chopper, set necessary parameters and display the frequency. 
@@ -150,11 +150,12 @@ namespace MC2000B_Serial
                 Console.WriteLine(ex);
             }
 
-            //Close the deivce
+            //Disable the deivce
             device.Write("enable=0\r");//0 = disabled, 1 = enabled
             Thread.Sleep(300);
+            //Close the port
             device.Close();
-            Console.WriteLine("\nProgram finishes.");
+            Console.WriteLine("\nProgram finished.");
             Console.ReadLine();
             return 1;
 
@@ -217,6 +218,11 @@ namespace MC2000B_Serial
             while (running)
             {
                 Console.Write("\rThe reference out frequency is " + device.ReadLine() + " Hz. ");
+
+                //Clear buffers;
+                device.DiscardInBuffer();
+                device.DiscardOutBuffer();
+
                 //Get the reference out frequency
                 device.Write("refoutfreq?\r");
                 echo = device.ReadLine();
@@ -225,7 +231,7 @@ namespace MC2000B_Serial
                 //Clear the text by filling with spaces
                 Console.Write("\r" + new string(' ', Console.WindowWidth));
                 //Reset the cursor position
-                Console.SetCursorPosition(currentColumn, currentLine);
+                Console.SetCursorPosition(currentColumn, currentLine);              
             }
         }
     }
