@@ -5,9 +5,9 @@ Tested with SC30 Firmware v1.16\
 Labview 2025 Q1, 64 Bit
 
 ## Front Panel
-![Front Panel](SC30_FrontPanel.PNG)
+![Front Panel](SC30_FrontPanel.png)
 
 ## Block Diagram
-![Block Diagram](SC30_BlockDiagram.PNG)
+![Block Diagram](SC30_BlockDiagram.png)
 
 
