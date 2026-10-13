@@ -1,4 +1,4 @@
-# OSW Example
+# SC30 Example
 Shows how to connect to the SC30 and send serial commands
 
 Tested with SC30 Firmware v1.16\
